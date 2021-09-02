@@ -19,31 +19,31 @@ A parent folder/directory to store the models that we train has to be created us
 •	Copy the **matFiles** folder from the GitHub to inside the parent folder  
 •	Copy the **modelParameters** folder from the GitHub to inside the parent folder   
 •	To run prediction using trained model, download this file from google drive https://drive.google.com/drive/folders/1rPLU3Z_r6ZztwBH3eonlFEAV6qiQZd7h?usp=sharing. Place it inside    the modelParameters folder  
-•	In cell 3 of the jupyter notebook, Set DatasetAvailable = 0 if you want to download the dataset else set DatasetAvailable = 1 if it has been downloaded to prevent repeated downloads every time the code is being run (Set DatasetAvailable = 0 to initially download and then make it to 1)  
+•	In cell 3 of the jupyter notebook, Set _DatasetAvailable = 0_ if you want to download the dataset else set _DatasetAvailable = 1_ if it has been downloaded to prevent repeated downloads every time the code is being run (Set _DatasetAvailable_ = 0 to initially download and then make it to 1)  
 
 
 **Training the model**  
-If you wish to simply test the model , skip running the cell no 28 for training. Set ModelAvailable = 0 to train the model from scratch, for every 5 epochs the model parameters will be saved to modelsavepath folder   
+If you wish to simply test the model , skip running the cell no 28 for training. Set _ModelAvailable_ = 0 to train the model from scratch, for every 5 epochs the model parameters will be saved to modelsavepath folder   
 
 **Testing the model**  
 Make sure the variable parameterpath has the model file inside modelsavepath folder for testing  
-Set ModelAvailable = 1  
+Set _ModelAvailable_ = 1  
 Steps:  
    * Run cells 1 to 27
 
   * 27th cell  contains
-    “makefolder(DatasetAvailable,Modelavailable)
-    DownloadData(DatasetAvailable)
-    dataset = CelebA(filename)”
+    “makefolder(DatasetAvailable,Modelavailable)  
+    DownloadData(DatasetAvailable)  
+    dataset = CelebA(filename)”  
 
   * Skip the 28th  cell  
   * Run 29th cell  ,it contains
-    “trypredict(parameterpath,dataset.images[103:108],dataset.actualmasks[103:108])”  
+    “trypredict(parameterpath,dataset.images[103:108],dataset.actualmasks[103:108])”
     
-  * To predict use the trypredict function in cell 29, specify the indices in the testing set images and testing masks. ( Input images and masks have 4 dimensions, so if you wish to     use a single image you will have to unsqueeze)
+  * To predict use the trypredict function in cell 29, specify the indices in the testing set images and testing masks. ( Input images and masks have 4 dimensions, so if you wish     to  use a single image you will have to unsqueeze)
   * Run cells 30 and 31 for edited maps
 
 **Editing the image**  
-Setting fmel_change to a value will add to the melanin map   
-Setting fblood_change to a value will add to the haemoglobin map  
+Setting _fmel_change_ to a value will add to the melanin map   
+Setting _fblood_change_ to a value will add to the haemoglobin map  
 
