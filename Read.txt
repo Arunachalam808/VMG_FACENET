@@ -1,0 +1,3 @@
+Place 100.pth file from Google drive to this folder
+
+https://drive.google.com/drive/folders/1rPLU3Z_r6ZztwBH3eonlFEAV6qiQZd7h?usp=sharing
