@@ -13,8 +13,9 @@ Libraries used are in cell 2, please download them. For Pytorch I have used this
 A parent folder/directory to store the models that we train has to be created using the follow steps  
 •	Create a directory of your choice - This is your parentpath  
 •	Copy the parent directory path to parentpath variable in cell 3   
-•	Copy the matFiles folder from the GitHub link provided to inside the parent folder  
-•	To run prediction download modelParameters folder from GitHub to inside the parent folder  
+•	Copy the matFiles folder from the GitHub to inside the parent folder  
+•	Copy the modelParameters folder from the GitHub to inside the parent folder   
+•	To run prediction using trained model, download this file from google drive https://drive.google.com/drive/folders/1rPLU3Z_r6ZztwBH3eonlFEAV6qiQZd7h?usp=sharing. Place it inside    the modelParameters folder  
 •	In cell 3 of the jupyter notebook, Set DatasetAvailable = 0 if you want to download the dataset else set DatasetAvailable = 1 if it has been downloaded to prevent repeated downloads every time the code is being run  
 
 **Training the model**
